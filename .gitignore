@@ -8234,3 +8234,4 @@ app/stockSentiment.egg-info/requires.txt
 app/stockSentiment.egg-info/SOURCES.txt
 app/stockSentiment.egg-info/top_level.txt
 venv/lib/python2.7/site-packages/stockSentiment.egg-link
+app/blueprints/app.pyc
