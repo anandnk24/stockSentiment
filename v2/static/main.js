@@ -18,11 +18,14 @@ $(document).ready(function() {
     $("#get-btn").click(function() {
       var data = $("#ticker").val();
       if (data !== "") {
-        $.get("/", data, function() {
+        $.post("/add/", { ticker: data }, function() {
           console.log(data);
+          $.get("/");
+          location.reload();
         });
       } else {
-        
+
       }
+
     });
 });

@@ -42,9 +42,9 @@
           </thead>
           <tbody>
             {% for line in articles %}
-            <tr id="row-1" class='clickable-row' data-href='{{line.ticker}}' data-value='0.73'>
+            <tr id="row-1" class='clickable-row' data-href='{{line.link}}' data-value='{{line.sentiment}}'>
               <td data-title="Ticker">{{line.ticker}}</td>
-              <td data-title="Time">{{line.time}}}}</td>
+              <td data-title="Time">{{line.time}}</td>
               <td data-title="Article Title">{{line.title}}</td>
               <td data-title="Link">
                 <a href="{{line.link}}" target="_blank">{{line.link}}</a>
